@@ -3,6 +3,35 @@
 class A
 {
 public:
+    A() = default;
+    A(int value) : _my_int(value)
+    {
+
+    }
+
+    A(const A &other) : _my_int(other._my_int)
+    {
+
+    }
+
+    A(A &&other) 
+    {}
+
+    A &operator=(const A &other)
+    {
+        return *this;
+    }
+
+    A &operator=(A &&other)
+    {
+        return *this;
+    }
+
+    bool operator==(const A &other)
+    {
+        return true;
+    }
+
     void do_something() const 
     {
         printf("doing something\n");

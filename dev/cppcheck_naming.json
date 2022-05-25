@@ -1,7 +1,7 @@
 {
     "script":"naming.py",
     "args":[
-       "--function=\"^[a-z0-9]+(_[a-z0-9]+)*$\"",
+       "--function=\"^(([a-z0-9]+(_[a-z0-9]+)*)|(operator.*))$\"",
         "--var=\"^[a-z0-9]+(_[a-z0-9]+)*$\"",
         "--private-member-variable=\"^_[a-z0-9]+(_[a-z0-9]+)*$\"",
         "--const=\"^([a-z0-9]+(_[a-z0-9]+)*)|([A-Z0-9]+(_[A-Z0-9]+)*)$\""
