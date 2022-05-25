@@ -6,4 +6,4 @@ repos:
       - id: cppcheck
         args: [--addon=dev/cppcheck_naming.json]
       - id: clang-format
-        args: [--style=Google]
+        args: [--style=Google, -i]
